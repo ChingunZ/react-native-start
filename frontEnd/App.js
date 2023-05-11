@@ -1,14 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { Image, StyleSheet, Text, View, Dimensions } from 'react-native';
 
-
 export default function App() {
   return (
-    <View style={styles.container}>
-      <View>
-        <View>
-
-        </View>
+    <View style={styles.mainContainer}>
+      <View style={styles.contentContainer}>
       </View>
       <StatusBar style="auto" />
     </View>
@@ -18,14 +14,17 @@ export default function App() {
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 const styles = StyleSheet.create({
-  container: {
+  mainContainer: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  image: {
-    width: windowWidth,
-    height: windowHeight,
-  }
+  contentContainer: {
+
+  },
+  // image: {
+  //   width: windowWidth,
+  //   height: windowHeight,
+  // }
 });
